@@ -19,4 +19,5 @@ RUN pecl install xhprof
 # /usr/local/etc/php/conf.d/xdebug.ini
 # /usr/local/etc/php/conf.d/
 
-RUN pecl install grpc
+RUN pecl install grpc-1.30.0
+RUN pecl install protobuf-3.12.2
