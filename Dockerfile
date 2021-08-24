@@ -6,9 +6,10 @@ RUN apt-get update && apt-get install -y \
         libpng-dev \
         git \
         zip \
-        unzip \
-        zlib1g.dev
+        unzip
         
+RUN apt-get install -y zlib1g.dev
+
 RUN docker-php-ext-install bcmath
 
 RUN pecl channel-update pecl.php.net
